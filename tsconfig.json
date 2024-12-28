@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "target": "ES2016",
+    "module": "commonjs",
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "node"
+      },
+    ],
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./index.ts*"]
+    }
+  },
+  "include": ["node-env.d.ts", "**/*.ts", "**/*.tsx", ".node/types/**/*.ts", "tests/properties.specs.ts"],
+  "exclude": ["node_modules"]
+}
